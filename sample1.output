@@ -1,0 +1,13 @@
+Symbol Table:
+Name	Type	Memory Location
+x	int	2000
+a	int	2001
+
+Instruction Table:
+Address	Op	Operand
+1	PUSHI	0
+2	PUSHM	2000
+3	PUSHI	0
+4	PUSHM	2001
+5	PUSHM	2001
+6	POPM	2001

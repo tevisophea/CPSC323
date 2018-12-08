@@ -1,0 +1,19 @@
+! Rat18S sample code less than 20 lines !
+
+%%
+
+int x;
+int y;
+int z;
+
+int foo$;
+int bar$;
+
+foo$ = 35;
+bar$ = 30;
+
+if (foo$ <= bar$)
+	x = 5;
+endif
+
+bar$ = 12;

@@ -1,0 +1,20 @@
+%%
+int i, j, sum, max;
+
+
+i = 1;
+
+j = 2;
+
+sum =0;
+
+max = 5;
+
+
+
+if(i < max){
+	sum = i +j;
+	i= i + 1;
+}
+
+put(sum)

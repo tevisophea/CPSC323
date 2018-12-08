@@ -1,0 +1,27 @@
+R1. <Rat18S> ::= %% <Opt Declaration List> <Statement List> 
+R2. <Qualifier> ::= int | boolean 
+R3. <Body> ::= { <Statement List> }
+R4. <Opt Declaration List> ::= <Declaration List> | E
+R5. <Declaration List> ::= <Declaration><Declaration List'>
+R6. <Declaration List'> ::= <Declaration List> | E
+R7. <Declaration> ::= <Qualifier> <IDs> 
+R8. <IDs> ::= <Identifier> <IDs’>
+R9. <IDs'> ::= <IDs> | E
+R10. <Statement List> ::= <Statement><Statement List’>
+R11. <Statement List'> ::= <Statement List> | E
+R12. <Statement> ::= <Compound> | <Assign> | <If> | <Return> | <Print> | <Scan> | <While> 
+R13. <Compound> ::= { <Statement List> } 
+R14. <Assign> ::= <Identifier> = <Expression> ;
+R15. <If> ::= if ( <Condition> ) <Statement> endif | if ( <Condition> ) <Statement> else <Statement> endif 
+R16. <Return> ::= return ; | return <Expression> ;
+R17. <Print> ::= put ( <Expression> );
+R18. <Scan> ::= get ( <IDs> );
+R19. <While> ::= while ( <Condition> ) <Statement> 
+R20. <Condition> ::= <Expression> <Relop> <Expression>
+R21. <Relop> ::= == | ^= | > | < | => | =< 
+R22. <Expression> ::= <Term> <Expression'>
+R23. <Expression'> ::= + <Term> <Expression'> | - <Term> <Expression'> | E
+R24. <Term> ::= <Factor> <Term'>
+R25. <Term'> ::= * <Factor> <Term'> | / <Factor> <Term'> | E
+R26. <Factor> ::= - <Primary> | <Primary>
+R27. <Primary> ::= <Identifier> | <Integer> | <Identifier> ( <IDs> ) | ( <Expression> ) | true | false 

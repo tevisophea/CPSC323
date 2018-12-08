@@ -1,0 +1,18 @@
+! Sample code more than 20 lines !
+
+%%
+
+int num;
+int foo;
+int bar$;
+
+get (num);
+get (foo);
+get (bar$);
+
+while (num  <  foo ) {
+	put (num);
+	num =  num  +  bar$;
+}
+
+put(bar$);

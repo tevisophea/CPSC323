@@ -1,0 +1,9 @@
+! Rat18S sample  code less than 10 lines !
+
+%%
+
+int x;
+
+boolean a;
+
+a = false;
